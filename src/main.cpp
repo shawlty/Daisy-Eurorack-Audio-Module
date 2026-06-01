@@ -4,6 +4,7 @@ using namespace daisy;           // Use Daisy classes without daisy::
 
 DaisySeed hw;                    // Create Daisy hardware object
 
+static float volume = 0.50f;     // 50% volume for safer first audio test
 
 // Audio callback runs continuously
 static void AudioCallback(AudioHandle::InputBuffer in,
@@ -12,9 +13,9 @@ static void AudioCallback(AudioHandle::InputBuffer in,
 {
     for(size_t i = 0; i < size; i++) // Process every sample
     {
-        out[0][i] = in[0][i]; // Left input -> Left output
+        out[0][i] = in[0][i] * volume; // Left input -> left output
 
-        out[1][i] = in[1][i]; // Right input -> Right output
+        out[1][i] = in[1][i] * volume; // Right input -> right output
     }
 }
 
