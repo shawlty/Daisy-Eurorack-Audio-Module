@@ -1,20 +1,49 @@
-# Daisy-Eurorack-Audio-Module
-Eurorack audio module built with Daisy Seed. Real-time DSP, delay, reverb, filters, OLED UI, CV control, and full hardware + firmware documentation. 
+# WaveForge-1
+
+Real-Time Embedded Audio DSP Platform built with Daisy Seed.
 
 ## Features
--Stereo audio processing
--Delay, Reverb, Filters
--CV control
--OLED UI
--Encoder and buttons
+
+* Stereo Audio Processing
+* Real-Time Audio Callback
+* OLED Interface
+* Rotary Encoder Controls
+* Potentiometer Inputs
+* Eurorack Expansion
+* Modular Firmware
 
 ## Hardware
--Daisy Seed
--Eurorack power (+-12V)
--See [BOM] (hardware/bom.md)
 
-## Build Progress
-Check [build log] (docs/build-log.md) for daily updates
+* Daisy Seed
+* OLED I2C Display
+* TL072 Audio Stage
+* LM2596 Power
+* EC11 Encoder
 
-## Demo
-(Add video link here)
+## Firmware
+
+C++
+
+libDaisy
+
+STM32H750
+
+## Status
+
+Current:
+
+Audio Pass Through
+
+Next:
+
+Hardware Bring-Up
+
+## Goals
+
+Create a professional embedded audio product while demonstrating:
+
+* Embedded C++
+* DSP
+* Hardware Design
+* Git Workflow
+* Documentation
